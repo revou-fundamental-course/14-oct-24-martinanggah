@@ -7,15 +7,18 @@ nav{
 nav a {
     color: black;
     cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 5px;
 }
 
 .logo-icon{
     height: 50px;
     width: 50px;
-    background-image: url();
+    /* background-image: url("assets\Logo Terserah MARI.png"); */
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .main-header {
