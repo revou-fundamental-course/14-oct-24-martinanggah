@@ -62,8 +62,32 @@
                 <h1>Message Us</h1>
             </header>
             <div class="message-container">
-                <form action=""></form>
-                <div></div>
+               <!-- Form aksi -->
+                <form>
+                    <div class="fit-form">
+                    <label class="colon" for="nama" ><span>Nama</span>:</label>
+                    <input class="border-form" type="text" id="nama" name="nama" placeholder="Nama">
+                    </div>
+                    <div class="fit-form">
+                    <label class="colon" for="tanggallahir"><span>Tanggal lahir</span>:</label>
+                    <input class="border-form" type="date" id="tanggalLahir" name="tanggalLahir">
+                    </div> 
+                    <div class="fit-form">   
+                    <label class="colon" for="jeniskelamin"><span>Jenis Kelamin</span>:</label>
+                    <input type="radio" id="laki" name="jenisKelamin" value="laki">
+                    <label style="margin-right: 20px;" for="laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                    </div>   
+                    <div class="fit-form">
+                    <label class="colon" style="vertical-align: top;" for="pesan"><span>Pesan</span>:</label>         
+                    <textarea class="border-form" id="pesan" name="pesan" rows="7" cols="40" placeholder="Pesan"></textarea>
+                    </div>
+                </form>
+                
+                <div class="margin-messageus">
+                    <textarea id="output-pesan" name="output-pesan" rows="10" cols="50" style="width: 100%; height: 100%;"></textarea>
+                </div>
             </div>
         </section>
     </main>
