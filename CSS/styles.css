@@ -1,1 +1,39 @@
 /* ini css */
+
+nav{
+    display: flex;
+}
+
+nav a {
+    color: black;
+    cursor: pointer;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-banner{
+    height: 250px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+footer div{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-style: italic;
+}
