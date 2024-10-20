@@ -25,6 +25,8 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 90px;
+    margin-left: 60px;
 }
 
 .photo-banner{
@@ -50,7 +52,7 @@ footer div{
   .colon{
     margin-right: 20px;
     display: inline-flex;
-    /* align-items: center; */
+    align-items: center;
   }
 
   .border-form{
