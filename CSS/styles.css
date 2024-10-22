@@ -1,23 +1,23 @@
 /* ini css */
 
-nav{
+.menuhome {
     display: flex;
 }
 
-nav a {
+.menuhome a {
     color: black;
     cursor: pointer;
     text-decoration: none;
     border: 1px solid #ccc;
-    padding: 5px;
+    padding: 9px;
 }
 
 .logo-icon{
     height: 50px;
     width: 50px;
     /* background-image: url("assets\Logo Terserah MARI.png"); */
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover;
+    background-position: center; */
     /* border-radius: 50%; */
 }
 
@@ -94,4 +94,21 @@ section {
   width: 100%;
   flex: 1;
   align-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+  }
+  .menuhome {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .main-header {
+    margin-left: 90px;
+  }
+  /* .menuhome a {
+    width: 100%;
+  } */
 }

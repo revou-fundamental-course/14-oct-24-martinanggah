@@ -4,25 +4,27 @@ function replacename(){
     document.getElementById("nama-user").innerHTML = nameuser
 }
 
-document.getElementById("ganti-nama").addEventListener("click", function(){replacename()})
-// replacename();
+// document.getElementById("ganti-nama").addEventListener("click", function(){replacename()})
+replacename();
 
-function tampilkanData() {
-    var namapesan = document.getElementById("nama-pesan").value;
-    var tanggalLahir = document.getElementById("tanggalLahir").value;
-    var jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
-    var pesan = document.getElementById("pesan").value;
+function validateForm() {
+    const namapesan = document.forms["message-forms"]["nama-pesan"].value;
+    const tanggalLahir = document.forms["message-forms"]["tanggalLahir"].value;
+    const jenisKelamin = document.forms["message-forms"]["jenisKelamin"].value;
+    const pesan = document.forms["message-forms"]["pesan"].value;
 
-    // var hasilDiv = document.getElementById("hasil-pesan");
-    // hasilDiv.innerHTML = 
-    // "<p>Nama: " + namapesan + 
-    // "</p><p>Tanggal Lahir: " + tanggalLahir + 
-    // "</p><p>Jenis Kelamin: " + jenisKelamin + 
-    // "</p><p>Pesan: " + pesan + "</p>";
+    if (namapesan == "" || tanggalLahir == "" || jenisKelamin == "" || pesan == "") {
+        alert ("Tidak boleh ada yang kosong");
+        return false;
+    }
+
+    // setSenderUI (namapesan, tanggalLahir, jenisKelamin, pesan);
 
     document.getElementById("hasil-pesan").innerHTML = 
     "<p>Nama: " + namapesan + 
     "</p><p>Tanggal Lahir: " + tanggalLahir + 
     "</p><p>Jenis Kelamin: " + jenisKelamin + 
     "</p><p>Pesan: " + pesan + "</p>";
+
+    return false;
 }

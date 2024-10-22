@@ -12,11 +12,15 @@
         <div>
             <img src="assets\masjid al falah.jpeg" alt="Logo Masjid" class="logo-icon">
         </div>
-        <nav>
+        <nav class="menuhome">
             <a href="#section-home">Home</a>
             <a href="#section-profil">Profile</a>
             <a href="#section-porto">Portofolio</a>
             <a href="#message-us">Message Us</a>
+            <!-- <button class="menuhome">Home</button>
+            <button class="menuhome">Profile</button>
+            <button class="menuhome">Portofolio</button>
+            <button class="menuhome">Message Us</button> -->
         </nav>
     </header>
 
@@ -26,12 +30,13 @@
         <!-- section home -->
         <section id="section-home">
             <header>
-                <h1>Hi <span id="nama-user">User</span> Welcome to my web</h1>
-                <button id="ganti-nama">Ganti Nama</button>
+                <h1 style="margin-bottom: 0px;">Hi <span id="nama-user">User</span> Welcome to my web</h1>
+                <!-- <button id="ganti-nama">Ganti Nama</button> -->
                 <script src="js\script.js"></script>
+                <p style="margin: 0px 0px 10px 0px;">untuk pembuatan paragraf</p>
             </header>
             <article>
-                <p>untuk pembuatan paragraf</p>
+                <!-- <p>untuk pembuatan paragraf</p> -->
                 <!-- photo banner -->
                 <div class="photo-banner"></div>
             </article>
@@ -65,10 +70,10 @@
             </header>
             <div class="message-container">
                <!-- Form aksi -->
-                <form>
+                <form name="message-forms" onsubmit="return validateForm()">
                     <div class="fit-form">
                     <label class="colon" for="nama-pesan" ><span>Nama</span>:</label>
-                    <input class="border-form" type="text" required id="nama-pesan" name="nama-pesan" placeholder="Nama-pesan">
+                    <input class="border-form" type="text" required id="nama-pesan" name="nama-pesan" placeholder="Nama">
                     </div>
 
                     <div class="fit-form">
@@ -89,7 +94,7 @@
                     <textarea class="border-form" id="pesan" name="pesan" rows="7" cols="40" placeholder="Pesan"></textarea>
                     </div>
 
-                    <button class="border-form" type="button" value="Submit" id="submit-pesan" onclick="tampilkanData()"><b>SUBMIT</b></button>
+                    <button class="border-form" type="button" value="Submit" id="submit-pesan" onclick="validateForm()"><b>SUBMIT</b></button>
                 </form>
                 
                 <div id="hasil-pesan"></div>
